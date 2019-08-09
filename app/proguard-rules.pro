@@ -15,3 +15,23 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+#okhttp
+-dontwarn okhttp3.**
+-keep class okhttp3.**{*;}
+
+#okio
+-dontwarn okio.**
+-keep class okio.**{*;}
+
+
+# glide 的混淆代码
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+# banner 的混淆代码
+-keep class com.youth.banner.** {
+    *;
+ }
+ -keep class android.support.v8.renderscript.** { *; }

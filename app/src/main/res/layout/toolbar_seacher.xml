@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/iv_menu"
+                android:layout_width="?android:actionBarSize"
+                android:layout_height="?android:actionBarSize"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_34"
+                    android:layout_height="@dimen/spacing_34"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/spacing_4"
+                    android:src="@drawable/ic_menu_black_24dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/spacing_72"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="搜索"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_20" />
+
+
+            <LinearLayout
+                android:id="@+id/iv_serach"
+                android:layout_width="?android:actionBarSize"
+                android:layout_height="?android:actionBarSize"
+                android:layout_alignParentRight="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_30"
+                    android:layout_height="@dimen/spacing_30"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_search_black_24dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
